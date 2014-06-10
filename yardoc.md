@@ -22,23 +22,26 @@ study yard notes
 - [true, false]
 - [Array<String>]
 - [Array<String, Symbol>]
+
 > more types see: [yardoc types](http://yardoc.org/types.html)
 
 ##Documenting DSL Methods
 - attr serise, for those ones ,you add comment will generate docs
 - manully declare a method with @method tag
 - @attribute
+
 > - @attribute [w]
 > - @attribute [r]
 > - @attribute [rw]
+
 - @scope class
 - @visibility private
 
 ##Macros
 - once defined, use repeated
 - example:
-> # @!macro dm.property
-> # @return [$2] the $1 $0 of the post
+  # @!macro dm.property
+  # @return [$2] the $1 $0 of the post
 > property :tile, String
 > ....................
 > # some other place
